@@ -1,0 +1,54 @@
+.container{
+    background-color: cadetblue;
+    width: 600px;
+    height: 600px;
+
+}
+.item{
+    background-color: bisque;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: all 8S ease-in-out;
+    text-align: center;
+    font-weight: 700;
+    color: aliceblue;
+    font-size: larger;
+ 
+
+}
+.container:hover .item{
+    /* transform: translatex(300%); */
+    animation: aash 10s linear 2 normal;
+    /* background-color: orange; */
+    animation-fill-mode:paused;
+    /* animation-delay: -6s; */
+
+    animation-direction: normal;
+ 
+    
+   }
+@keyframes aash{
+    0%{
+        transform: translateX(0%);
+        /* background-color: red; */
+    }
+    25%{
+        transform: translatey(500%);
+        /* background-color: yellow; */
+    }
+    50%{
+        transform: translatex(500%) translateY(500%);
+        /* background-color:blue; */
+    }
+    100%{
+        transform: translateX(500%) ;
+        /* background-color: pink; */
+    }
+    from{
+        background-color: red;}
+        to{
+            background-color: yellow;
+        }
+        
+    }
